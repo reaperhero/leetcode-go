@@ -33,19 +33,19 @@ func findcombinationSum2(nums []int, target, index int, c []int, res *[][]int) {
 		*res = append(*res, b)
 		return
 	}
-	for i := index; i < len(nums); i++ {
+	for i := index; i < len(nums); i++ { // 0 []int [][]int
 		if i > index && nums[i] == nums[i-1] { // 这里是去重的关键逻辑,本次不取重复数字，下次循环可能会取重复数字
 			continue
 		}
 		if target >= nums[i] {
-			c = append(c, nums[i])
-			findcombinationSum2(nums, target-nums[i], i+1, c, res)
+			c = append(c, nums[i]) // c = []int{1}
+			findcombinationSum2(nums, target-nums[i], i+1, c, res) // {1, 2, 3, 6, 7, 8, 10} 7 []int{1} [][]int
 			c = c[:len(c)-1]
 		}
 	}
 }
 
 func Test_combinationSum2(t *testing.T) {
-	input := []int{10, 1, 2, 7, 6, 1, 5}
-	fmt.Println(combinationSum2(input, 8)) // [[1 1 6] [1 2 5] [1 7] [2 6]]
+	input := []int{1, 2, 3, 6, 7, 8, 10}
+	fmt.Println(combinationSum2(input, 8)) // [[1 7] [2 6] [8]]
 }
