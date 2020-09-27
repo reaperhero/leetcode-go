@@ -56,5 +56,5 @@ func abs(a int) int {
 
 func Test_threeSumClosest(t *testing.T) {
 	fmt.Println(threeSumClosest([]int{-1, 2, 1, -4}, 1))
-	fmt.Println(threeSumClosest([]int{-1, 0, 1, 1, 55},  3))
+	fmt.Println(threeSumClosest([]int{-1, 0, 1, 1, 55}, 3))
 }

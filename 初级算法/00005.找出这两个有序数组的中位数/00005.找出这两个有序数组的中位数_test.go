@@ -9,7 +9,6 @@ import (
 // nums2 = [3, 4]
 // The median is (2 + 3)/2 = 2.5
 
-
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	// 假设 nums1 的长度小
 	if len(nums1) > len(nums2) {
@@ -66,10 +65,8 @@ func min(a int, b int) int {
 	return a
 }
 
-
-
 func Test_findMedianSortedArrays(t *testing.T) {
-	nums1 := []int{1,2}
-	nums2 := []int{3,2}
-	fmt.Println(findMedianSortedArrays(nums1,nums2))
+	nums1 := []int{1, 2}
+	nums2 := []int{3, 2}
+	fmt.Println(findMedianSortedArrays(nums1, nums2))
 }
