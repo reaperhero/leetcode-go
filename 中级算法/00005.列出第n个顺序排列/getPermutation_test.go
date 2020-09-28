@@ -38,11 +38,10 @@ func findPermutation(n, index int, k *int, p []int, res *string, used *[]bool) {
 	return
 }
 
-
 func Test_getPermutation(t *testing.T) {
-	fmt.Println(getPermutation(4,5))
+	fmt.Println(getPermutation(4, 5))
 
-	fmt.Println(getPermutation(3,3)) // 213
+	fmt.Println(getPermutation(3, 3)) // 213
 	// "123"
 	// "132"
 	// "213"

@@ -32,6 +32,6 @@ func Test_trap(t *testing.T) {
 	input1 := []int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}
 	fmt.Println(trap(input1)) // 6
 
-	input2 := []int{2,1,2}
+	input2 := []int{2, 1, 2}
 	fmt.Println(trap(input2)) // 1
 }

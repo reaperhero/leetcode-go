@@ -41,5 +41,5 @@ func search33(nums []int, target int) int {
 
 func Test_search33(t *testing.T) {
 	input := []int{4, 5, 6, 7, 0, 1, 2}
-	fmt.Println(search33(input,6)) // 2
+	fmt.Println(search33(input, 6)) // 2
 }

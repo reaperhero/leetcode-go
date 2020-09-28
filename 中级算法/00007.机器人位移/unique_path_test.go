@@ -16,8 +16,6 @@ import (
 //2. Right -> Down -> Right
 //3. Down -> Right -> Right
 
-
-
 func uniquePaths(m int, n int) int {
 	dp := make([][]int, n)
 	for i := 0; i < n; i++ {
@@ -38,5 +36,5 @@ func uniquePaths(m int, n int) int {
 }
 
 func Test_uniquePaths(t *testing.T) {
-	fmt.Println(uniquePaths(3,3)) // 6
+	fmt.Println(uniquePaths(3, 3)) // 6
 }

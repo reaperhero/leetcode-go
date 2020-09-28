@@ -24,6 +24,6 @@ func searchInsert(nums []int, target int) int {
 }
 
 func Test_searchInsert(t *testing.T) {
-	input := []int{1,3,5,6,7,8,9,10,12,16}
-	fmt.Println(searchInsert(input,2))
+	input := []int{1, 3, 5, 6, 7, 8, 9, 10, 12, 16}
+	fmt.Println(searchInsert(input, 2))
 }

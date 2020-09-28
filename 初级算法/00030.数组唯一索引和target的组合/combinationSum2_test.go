@@ -38,7 +38,7 @@ func findcombinationSum2(nums []int, target, index int, c []int, res *[][]int) {
 			continue
 		}
 		if target >= nums[i] {
-			c = append(c, nums[i]) // c = []int{1}
+			c = append(c, nums[i])                                 // c = []int{1}
 			findcombinationSum2(nums, target-nums[i], i+1, c, res) // {1, 2, 3, 6, 7, 8, 10} 7 []int{1} [][]int
 			c = c[:len(c)-1]
 		}

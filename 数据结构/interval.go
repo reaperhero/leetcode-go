@@ -1,6 +1,5 @@
 package structures
 
-
 // Interval 提供区间表示
 type Interval struct {
 	Start int

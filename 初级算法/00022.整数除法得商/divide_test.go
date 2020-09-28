@@ -101,9 +101,7 @@ func abs(a int) int {
 	return -a
 }
 
-
-
 func Test_divide(t *testing.T) {
-	fmt.Println(divide(10,2)) // 5
-	fmt.Println(divide(11,2)) // 5
+	fmt.Println(divide(10, 2)) // 5
+	fmt.Println(divide(11, 2)) // 5
 }

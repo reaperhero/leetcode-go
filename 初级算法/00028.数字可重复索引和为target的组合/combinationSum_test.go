@@ -38,6 +38,6 @@ func findcombinationSum(nums []int, target, index int, c []int, res *[][]int) {
 }
 
 func Test_combinationSum(t *testing.T) {
-	input := []int{-1,1, 2, 3, 5}
+	input := []int{-1, 1, 2, 3, 5}
 	fmt.Println(combinationSum(input, 5)) // [[1 1 1 1 1] [1 1 1 2] [1 1 3] [1 2 2] [2 3] [5]]
 }
