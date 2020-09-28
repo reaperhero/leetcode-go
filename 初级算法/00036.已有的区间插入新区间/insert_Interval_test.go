@@ -54,7 +54,7 @@ func min(a int, b int) int {
 
 func Test_insert(t *testing.T) {
 	intervals := []Interval{{Start: 1, End: 2}, {Start: 3, End: 5}, {Start: 6, End: 7}, {Start: 8, End: 10}, {Start: 12, End: 16}}
-	newInterval := Interval{Start: 4, End: 8}
-	fmt.Println(insert(intervals, newInterval)) // [{1 2} {3 10} {12 16}]
+	newInterval := Interval{Start: 18, End: 19}
+	fmt.Println(insert(intervals, newInterval)) // [{1 2} {3 5} {6 7} {8 10} {12 16} {18 19}]
 
 }
