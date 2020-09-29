@@ -51,5 +51,5 @@ func minWindow(s string, t string) string {
 
 func Test_minWindow(t *testing.T) {
 	input1, input2 := "ADOBECODEBANC", "ABC"
-	fmt.Println(minWindow(input1,input2)) // BANC
+	fmt.Println(minWindow(input1, input2)) // BANC
 }

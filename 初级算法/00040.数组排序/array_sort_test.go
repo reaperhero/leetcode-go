@@ -36,9 +36,8 @@ func sortArray(nums []int) {
 	}
 }
 
-
 func Test_sortArray(t *testing.T) {
-	input := []int{2,0,2,1,1,0}
+	input := []int{2, 0, 2, 1, 1, 0}
 	sortArray(input)
 	fmt.Println(input) // [0 0 1 1 2 2]
 }
