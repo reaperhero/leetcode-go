@@ -22,21 +22,15 @@ func Test_binaryheap(t *testing.T) {
 	heap.Push(6)
 	heap.Push(2)
 	fmt.Println(heap.Values()) // [1 2 2 3 5 6 6 4]
-	//   1
-	//  2   2
-	// 3 5 6 6
-	//4
-	_, _ = heap.Peek() // 1,true
-
-	_, _ = heap.Pop() // 1, true
-	_, _ = heap.Pop() // 2, true
-	_, _ = heap.Pop() // 2, true
-	// ...
-	_, _ = heap.Pop() // nil, false (nothing to pop)
-	heap.Push(1)  // 1
-	heap.Clear()      // empty
-	heap.Empty()      // true
-	heap.Size()       // 0
+	_, _ = heap.Peek()         // 1,true
+	iteratorMin := heap.Iterator()
+	for iteratorMin.Next() {
+		fmt.Println(iteratorMin.Value()) // 从最小值开始打印
+	}
+	heap.Push(1) // 1
+	heap.Clear() // empty
+	heap.Empty() // true
+	heap.Size()  // 0
 
 	// 最大堆
 	inverseIntComparator := func(a, b interface{}) int {
@@ -52,9 +46,8 @@ func Test_binaryheap(t *testing.T) {
 	heap.Push(6)
 	heap.Push(2)
 	fmt.Println(heap.Values()) // [6 4 6 2 3 1 5 2]
-	//   	6
-	// 	4    6
-	// 2 3  1 5
-	//2
-	heap.Values()
+	iteratorMax := heap.Iterator()
+	for iteratorMax.Next() {
+		fmt.Println(iteratorMax.Value()) // 从最大值开始打印
+	}
 }

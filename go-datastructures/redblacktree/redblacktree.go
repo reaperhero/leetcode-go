@@ -5,7 +5,6 @@
 package main
 
 import (
-	"fmt"
 	rbt "github.com/emirpasic/gods/trees/redblacktree"
 )
 
@@ -20,8 +19,8 @@ func main() {
 	tree.Put(4, "d") // 1->a, 2->b, 3->c, 4->d (in order)
 	tree.Put(5, "e") // 1->a, 2->b, 3->c, 4->d, 5->e (in order)
 	tree.Put(6, "f") // 1->a, 2->b, 3->c, 4->d, 5->e, 6->f (in order)
-
-	fmt.Println(tree)
+	tree.Get(5)    // 查询
+	//fmt.Println(tree)
 	//
 	//  RedBlackTree
 	//  │           ┌── 6
@@ -35,7 +34,7 @@ func main() {
 	_ = tree.Keys()   // []interface {}{1, 2, 3, 4, 5, 6} (in order)
 
 	tree.Remove(2) // 1->a, 3->c, 4->d, 5->e, 6->f (in order)
-	fmt.Println(tree)
+	//fmt.Println(tree)
 	//
 	//  RedBlackTree
 	//  │       ┌── 6

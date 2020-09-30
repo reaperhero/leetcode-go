@@ -49,9 +49,11 @@ func Test_avltree_01(t *testing.T) {
 	//					└── 2
 	//							└── 1
 
-	_ = tree.Values()   // []interface {}{a b c d e f f f f f f f f f f}  (in order)
-	_ = tree.Keys()     // []interface {}{1 2 3 4 5 6 7 8 9 10 11 12 13 14 15} (in order)
-
+	_ = tree.Values() // []interface {}{a b c d e f f f f f f f f f f}  (in order)
+	_ = tree.Keys()   // []interface {}{1 2 3 4 5 6 7 8 9 10 11 12 13 14 15} (in order)
+	if v, ok := tree.Get(12); ok {
+		fmt.Println(v) // f
+	}
 	tree.Remove(2)
 
 	fmt.Println(tree)
