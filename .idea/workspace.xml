@@ -77,21 +77,21 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1603123829583">
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1603123845264">
       <screen x="0" y="23" width="1680" height="978" />
     </state>
-    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.23.1680.978@0.23.1680.978" timestamp="1603123829583" />
-    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1603123829583">
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.23.1680.978@0.23.1680.978" timestamp="1603123845264" />
+    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1603123845263">
       <screen x="0" y="23" width="1680" height="978" />
     </state>
-    <state width="1638" height="264" key="GridCell.Tab.0.center/0.23.1680.978@0.23.1680.978" timestamp="1603123829583" />
-    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1603123829582">
+    <state width="1638" height="264" key="GridCell.Tab.0.center/0.23.1680.978@0.23.1680.978" timestamp="1603123845263" />
+    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1603123845262">
       <screen x="0" y="23" width="1680" height="978" />
     </state>
-    <state width="1638" height="264" key="GridCell.Tab.0.left/0.23.1680.978@0.23.1680.978" timestamp="1603123829582" />
-    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1603123829583">
+    <state width="1638" height="264" key="GridCell.Tab.0.left/0.23.1680.978@0.23.1680.978" timestamp="1603123845262" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1603123845263">
       <screen x="0" y="23" width="1680" height="978" />
     </state>
-    <state width="1638" height="264" key="GridCell.Tab.0.right/0.23.1680.978@0.23.1680.978" timestamp="1603123829583" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right/0.23.1680.978@0.23.1680.978" timestamp="1603123845263" />
   </component>
 </project>
